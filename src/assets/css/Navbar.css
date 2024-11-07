@@ -1,0 +1,57 @@
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 98vw;
+    height: 6%;
+    z-index: 1;
+    align-items: center;
+    padding: 1%;
+}
+
+.navbar-left {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.landingPage-logo img {
+    width: 60px; /* Set width and height to match text */
+    height: 60px;
+    margin-right: 10px; /* Space between logo and text */
+    border-radius: 50%; /* Optional: make it circular */
+    object-fit: cover;
+}
+
+.navbar-title h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.navbar-title p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.navbar-mid, .navbar-right {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-mid p, .navbar-right p {
+    margin: 0 10px;
+    color: rgb(224, 225, 226);
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-mid p:hover, .navbar-right p:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
