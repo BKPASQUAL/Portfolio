@@ -7,32 +7,45 @@
 
 .projects-con {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-con-box {
     display: flex;
-    height: 80vh;
+    height: 70vh;
     width: 87%;
     margin: 3%;
     border-radius: 25px;
     border: 1px solid white;
     box-shadow: #ffffff;
+    position: relative;
+}
+
+.projects-box-title {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 50%;
+
+}
+
+.left-layout {
+    flex-direction: row;
+}
+
+.right-layout {
+    flex-direction: row-reverse;
 }
 
 .projects-box-left {
-    height: 80%;
+    height: 90%;
     padding: 2%;
     width: 50%;
     background: transparent;
-}
-
-.projects-box-left p {
-    color: #ffffff;
-    font-size: 150%;
-    margin-top: 2%;
-    margin-left: 1%;
-    font-weight: 700;
 }
 
 .projects-box-left-img {
@@ -52,7 +65,7 @@
 }
 
 .projects-box-right {
-    height: 80%;
+    height: 73%;
     width: 50%;
     padding: 4%;
     display: flex;
@@ -60,6 +73,8 @@
     justify-content: space-around;
     color: #ffffff;
     border-radius: 25px;
+    margin-top: 4%;
+    background: transparent;
 }
 
 .projects-box-right div {

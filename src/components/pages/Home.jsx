@@ -9,8 +9,9 @@ function Home() {
     <div>
       <Navbar/>
       <LandingPage/>
-      <Skills/>
       <Projects/>
+      <Skills/>
+
     </div>
   )
 }
