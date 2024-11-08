@@ -1,0 +1,37 @@
+.skills-main {
+    height: 40vh;
+    width: 100%;
+    color: aliceblue;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 6%;
+    width: 100%;
+    
+}
+
+.skills-con {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-con .icon {
+    font-size: 28px; /* Adjust icon size as needed */
+    color: #61dafb; /* Customize color for the icons */
+}
+
+.skills-con span {
+    color: aliceblue;
+}

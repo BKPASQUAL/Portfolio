@@ -4,8 +4,6 @@ import Navbar from "../common/Navbar";
 
 function LandingPage() {
   return (
-    <>
-      <Navbar />
       <div className="landingPage-main">
         <div className="landingPage-left">
          
@@ -17,9 +15,10 @@ function LandingPage() {
             <button>About Me </button>
         </div>
 
-        <div className="landingPage-right"></div>
+        <div className="landingPage-right">
+            <div></div>
+        </div>
       </div>
-    </>
   );
 }
 

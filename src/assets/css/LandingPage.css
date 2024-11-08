@@ -6,6 +6,7 @@
   height: 100vh;
   padding: 0 6%;
   color: #fff;
+  z-index: -10 ;
 }
 
 .landingPage-left {
@@ -14,8 +15,7 @@
 }
 
 .landingPage-logo img {
-  width: 40%;
-  height: 100%;
+  
 }
 
 .landingPage-left h1 {
@@ -58,10 +58,12 @@
   width: 40%;
   height: 100%;
   background-image: url(../images/without_background.png);
-  background-size: cover;
-  background-position: center bottom;
+  background-size: contain; /* Ensures the image scales without cropping */
+  background-position:right; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   border-radius: 15px;
   margin-right: 2%;
+  background-attachment: fixed;
 }
 
 /* Mobile Styles */
