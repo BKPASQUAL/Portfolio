@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/Navbar.css";
 import bk from "../../assets/images/bk.jpg";
 
-function Navbar() {
+function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -23,9 +23,14 @@ function Navbar() {
     };
   }, [lastScrollY]);
 
+  // Function to scroll to the top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className={`navbar-main ${showNavbar ? "show" : "hide"}`}>
-      <div className="navbar-left">
+      <div className="navbar-left" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
         <img src={bk} alt="Logo" />
         <div className="navbar-title">
           <h1>Bawantha Kalind Pasqual</h1>
@@ -34,13 +39,14 @@ function Navbar() {
       </div>
       <div className="navbar-mid">
         <p>About</p>
-        <p>Skills</p>
-        <p>Projects</p>
-        <p>Experience</p>
+        <p onClick={onSkillsClick}>Skills</p>
+        <p onClick={onProjectsClick}>Projects</p>
+        <p onClick={onExperienceClick}>Experience</p>
       </div>
       <div className="navbar-right">
         <p>LinkedIn</p>
         <p>Resume</p>
+        <p>GitHub</p>
       </div>
     </div>
   );
