@@ -1,6 +1,6 @@
 .skills-main {
     height: 40vh;
-    width: 100%;
+    width: 87%;
     color: aliceblue;
     z-index: 6;
     display: flex;
@@ -9,6 +9,8 @@
     font-size: 24px;
     display: flex;
     flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .skills-title{

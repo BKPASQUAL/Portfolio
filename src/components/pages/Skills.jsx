@@ -51,7 +51,7 @@ function Skills() {
       initial="hidden"
       animate={controls}
       variants={{
-        visible: { opacity: 1, y: 0, transition: { duration: 3 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 2 } },
         hidden: { opacity: 0, y: 50 },
       }}
     >
@@ -67,7 +67,7 @@ function Skills() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                duration: 3,
+                duration: 2,
                 delay: index * 0.1,
               }}
             >

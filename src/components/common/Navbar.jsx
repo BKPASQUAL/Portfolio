@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/css/Navbar.css";
 import bk from "../../assets/images/bk.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,10 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
     };
   }, [lastScrollY]);
 
+  const onClick = () => {
+    navigate("./about")
+  }
+
   // Function to scroll to the top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -38,7 +44,7 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
         </div>
       </div>
       <div className="navbar-mid">
-        <p>About</p>
+        <p onClick={onClick}>About</p>
         <p onClick={onSkillsClick}>Skills</p>
         <p onClick={onProjectsClick}>Projects</p>
         <p onClick={onExperienceClick}>Experience</p>

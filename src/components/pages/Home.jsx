@@ -4,6 +4,7 @@ import LandingPage from './LandingPage';
 import Skills from './Skills';
 import Projects from '../home/projects';
 import Experience from '../home/Experience';
+import Footer from '../common/Footer';
 
 function Home() {
   const skillsRef = useRef(null);
@@ -32,6 +33,7 @@ function Home() {
       <div ref={skillsRef}>
         <Skills />
       </div>
+      <Footer/>
     </div>
   );
 }

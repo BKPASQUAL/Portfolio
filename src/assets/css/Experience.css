@@ -1,6 +1,8 @@
 /* Main container styling */
 .experience-main {
     padding: 40px;
+    padding-left: 6.3%;
+    padding-right: 6.3%;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin-bottom: 4%;
