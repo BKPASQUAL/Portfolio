@@ -97,3 +97,23 @@
     margin: 0;
 }
 
+/* src/assets/css/Projects.css */
+/* src/assets/css/Projects.css */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Ensure the buttons contrast well with the theme */
+  font-size: 24px;
+}
+
+.projects-box-left-img .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.projects-box-left-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}

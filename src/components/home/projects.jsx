@@ -4,6 +4,10 @@ import "../../assets/css/Projects.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import projectData from "../../assets/data/Projects";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 function Projects() {
   const controls = useAnimation();
@@ -40,7 +44,20 @@ function Projects() {
               </div>
               <div className="projects-box-left">
                 <div className="projects-box-left-img">
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <Swiper
+                    spaceBetween={30}
+                    slidesPerView={1}
+                   
+                  >
+                    {project.images.map((image, imgIndex) => (
+                      <SwiperSlide key={imgIndex}>
+                        <img
+                          src={image}
+                          alt={`${project.title} image ${imgIndex + 1}`}
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
               <div className="projects-box-right">
@@ -54,7 +71,7 @@ function Projects() {
                   <div className="project-section-title">Stack</div>
                   <div className="project-section-content stack-list">
                     {project.stack.map((tech, techIndex) => (
-                      <span key={techIndex}>{tech} |  </span>
+                      <span key={techIndex}>{tech} | </span>
                     ))}
                   </div>
                 </div>
