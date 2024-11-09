@@ -1,0 +1,67 @@
+.HeaderSection-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 6%;
+  color: #fff;
+  z-index: -10 ;
+}
+
+
+
+.HeaderSection-left {
+  width: 40%;
+  height: 100%;
+  background-image: url(../images/without_background.png);
+  background-size: contain; /* Ensures the image scales without cropping */
+  background-position:left; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-radius: 15px;
+  margin-right: 2%;
+  background-attachment: fixed;
+}
+
+
+.HeaderSection-right {
+  width: 45%;
+  padding-left: 5%;
+}
+
+
+
+.HeaderSection-right h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #f2b632;
+  margin-bottom: 0.3em;
+  transition: color 0.3s ease;
+}
+
+.HeaderSection-right h1:hover {
+  color: #e09e2e;
+}
+
+.HeaderSection-right p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #ddd;
+  margin-bottom: 1.5em;
+}
+
+.HeaderSection-right button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #1e1e2f;
+  background-color: #f2b632;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.HeaderSection-right button:hover {
+  background-color: #e09e2e;
+  transform: scale(1.05);
+}
