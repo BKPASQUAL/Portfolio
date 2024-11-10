@@ -1,5 +1,3 @@
-// src/components/Projects.js
-
 import React, { useEffect } from "react";
 import "../../assets/css/Projects.css";
 import { motion, useAnimation } from "framer-motion";
@@ -10,7 +8,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import { FaGithub } from "react-icons/fa";
+import { FaCode, FaDatabase, FaProjectDiagram } from "react-icons/fa"; // Import distinct icons for each category
 
 function Projects() {
   const controls = useAnimation();
@@ -44,14 +42,46 @@ function Projects() {
             >
               <div className="projects-box-title">
                 <p>{project.title}</p>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-icon"
-                >
-                  <FaGithub size={30} /> {/* Adjust the size as needed */}
-                </a>
+                <div className="github-links">
+                  {/* Frontend Repository */}
+                  {project.github_fe && (
+                    <a
+                      href={project.github_fe}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-icon"
+                      title="Frontend Repository"
+                    >
+                      <FaCode size={30} /> {/* Frontend icon */}
+                    </a>
+                  )}
+
+                  {/* Backend Repository */}
+                  {project.github_be && (
+                    <a
+                      href={project.github_be}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-icon"
+                      title="Backend Repository"
+                    >
+                      <FaDatabase size={30} /> {/* Backend icon */}
+                    </a>
+                  )}
+
+                  {/* Management Repository - appears only if project.github_management exists */}
+                  {project.github_management && (
+                    <a
+                      href={project.github_management}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-icon"
+                      title="Management Repository"
+                    >
+                      <FaProjectDiagram size={30} /> {/* Management icon */}
+                    </a>
+                  )}
+                </div>
               </div>
               <div className="projects-box-left">
                 <div className="projects-box-left-img">

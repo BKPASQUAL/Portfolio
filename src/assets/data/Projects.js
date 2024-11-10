@@ -1,3 +1,5 @@
+// src/components/Projects.js
+
 import tpp1 from "../images/TPP/tpp1.png";
 import tpp2 from "../images/TPP/tpp2.png";
 import tpp3 from "../images/TPP/tpp3.png";
@@ -19,7 +21,8 @@ const Projects = [
       "Galle area-specific recommendations",
     ],
     images: [tpp1, tpp2, tpp3, tpp4, tpp5],
-    github:"https://github.com/BKPASQUAL/TPP_FE.git"
+    github_fe: "https://github.com/BKPASQUAL/TPP_FE.git",
+    github_be: "https://github.com/BKPASQUAL/TPP_BE.git",
   },
   
   {
@@ -32,13 +35,15 @@ const Projects = [
       "Patient database maintenance",
       "Test result management",
       "Detailed reporting and analytics",
-      "Recipts and billing management",
+      "Receipts and billing management",
     ],
     images: [medi1, medi2],
-    github: "https://github.com/YourRepo/MedicalLabManagementSystem"
+    github_fe: "https://github.com/YourRepo/MedicalLabManagementSystem_FE",
+    github_be: "https://github.com/YourRepo/MedicalLabManagementSystem_BE",
+    github_management: "https://github.com/YourRepo/MedicalLabManagementSystem_Management",
   }
-
-  // Other projects...
+  
+  // Add other projects as needed...
 ];
 
 export default Projects;

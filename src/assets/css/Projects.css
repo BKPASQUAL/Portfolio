@@ -172,11 +172,50 @@
     font-size: 2rem;
     text-decoration: none;
     transition: color 0.3s ease;
-    margin-right: 4% !important;
+    margin-right: 20px !important;
     background: transparent;
     background-color: transparent;
 }
 
-.github-icon:hover {
-    color: #ffffff !important; /* Change to desired hover color */
+
+.github-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  margin-right: 4% !important;
+  background: transparent;
+  background-color: transparent;
+}
+
+.github-links:hover {
+}
+
+/* Tooltip container */
+.github-icon {
+  position: relative;
+}
+
+/* Tooltip text */
+.github-icon::after {
+  content: attr(title);
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the tooltip on hover */
+.github-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
