@@ -33,10 +33,10 @@ import green4 from "../images/Green/green4.png"
 import green5 from "../images/Green/green5.png"
 import green6 from "../images/Green/green6.png"
 
-import ch1 from "../images/CH/ch1.png"
-import ch2 from "../images/CH/ch2.png"
-import ch3 from "../images/CH/ch3.png"
-import ch4 from "../images/CH/ch4.png"
+import ch1 from "../images/Hardware/ch1.png"
+import ch2 from "../images/Hardware/ch2.png"
+import ch3 from "../images/Hardware/ch3.png"
+import ch4 from "../images/Hardware/ch4.png"
 
 const Projects = [
   {
@@ -215,7 +215,7 @@ const Projects = [
       "Database maintenance for customer and supplier records",
       "Centralized system for efficient retail and distribution operations"
     ],
-    images: [ch1, ch2, ch3, ch4], // Replace with actual images of the project
+    images: [ch1, ch2, ch3, ch4],
     github_fe: "https://github.com/YourRepo/ChampikaHardware_FE",
     github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
   },
