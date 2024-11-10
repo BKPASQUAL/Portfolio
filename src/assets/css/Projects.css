@@ -98,12 +98,20 @@
 }
 
 /* src/assets/css/Projects.css */
-/* src/assets/css/Projects.css */
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff; /* Ensure the buttons contrast well with the theme */
+  color: #fff;
   font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
 }
 
 .projects-box-left-img .swiper {
@@ -116,4 +124,23 @@
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+.arrow {
+  cursor: pointer;
+  font-size: 36px;
+  color: #979797;
+  position: absolute;
+  top: 50%;
+  bottom: 43%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: transparent;
+}
+
+.left {
+  left: 2.4%;
+}
+
+.right {
+  right: 48%;
 }
