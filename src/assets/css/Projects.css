@@ -26,12 +26,17 @@
   
   .projects-box-title {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 2%;
     color: #ffffff;
     font-size: 1.5em;
     font-weight: 700;
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    background-color: transparent;
   }
   
   .left-layout {
@@ -56,13 +61,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 50px;
+
   }
   
   .projects-box-left-img img {
     width: 100%;
+    height: auto;
+    border-radius: inherit; /* Allow .swiper-project-img to control radius */
+  }
+  
+  .swiper-project-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 25px; /* Set the border radius you prefer */
+    padding: 0; /* Remove padding to avoid clipping */
   }
   
   .projects-box-right {
@@ -150,3 +164,19 @@
     object-fit: cover;
   }
   
+  .github-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 4% !important;
+    background: transparent;
+    background-color: transparent;
+}
+
+.github-icon:hover {
+    color: #ffffff !important; /* Change to desired hover color */
+}

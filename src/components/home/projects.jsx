@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import { FaGithub } from "react-icons/fa";
 
 function Projects() {
   const controls = useAnimation();
@@ -43,17 +44,17 @@ function Projects() {
             >
               <div className="projects-box-title">
                 <p>{project.title}</p>
+                <a
+                  href="https://github.com/BKPASQUAL/TPP_FE.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-icon"
+                >
+                  <FaGithub size={30} /> {/* Adjust the size as needed */}
+                </a>
               </div>
               <div className="projects-box-left">
                 <div className="projects-box-left-img">
-                  {/* Custom Navigation Buttons */}
-                  {/* <span
-                    className="material-symbols-outlined arrow left"
-                    id={`prev-${index}`}
-                  >
-                    keyboard_arrow_left
-                  </span> */}
-
                   <Swiper
                     spaceBetween={30}
                     slidesPerView={1}
@@ -73,17 +74,11 @@ function Projects() {
                         <img
                           src={image}
                           alt={`${project.title} image ${imgIndex + 1}`}
+                          className="swiper-project-img"
                         />
                       </SwiperSlide>
                     ))}
                   </Swiper>
-
-                  {/* <span
-                    className="material-symbols-outlined arrow right"
-                    id={`next-${index}`}
-                  >
-                    keyboard_arrow_right
-                  </span> */}
                 </div>
               </div>
               <div className="projects-box-right">
@@ -106,7 +101,7 @@ function Projects() {
                   <div className="project-section-content">
                     <ul>
                       {project.features.map((feature, featureIndex) => (
-                        <li key={featureIndex}>{feature}</li>
+                        <div key={featureIndex}>{feature}</div>
                       ))}
                     </ul>
                   </div>
