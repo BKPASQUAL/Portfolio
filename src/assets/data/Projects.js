@@ -26,6 +26,13 @@ import event7 from "../images/EventInventory/event7.png";
 import event8 from "../images/EventInventory/event8.png";
 import event9 from "../images/EventInventory/event9.png";
 
+import green1 from "../images/Green/green1.png"
+import green2 from "../images/Green/green2.png"
+import green3 from "../images/Green/green3.png"
+import green4 from "../images/Green/green4.png"
+import green5 from "../images/Green/green5.png"
+import green6 from "../images/Green/green6.png"
+
 const Projects = [
   {
     title: "AI-Based Customized Travel Planning Platform For Galle",
@@ -157,6 +164,29 @@ const Projects = [
     ],
     github_fe: "https://github.com/YourRepo/WeddingsBySonali_FE",
     github_be: "https://github.com/YourRepo/WeddingsBySonali_BE",
+  },
+
+  {
+    title: "Green Light - Car Inspection Platform",
+    description:
+      "Green Light is a car inspection platform developed for a car inspection company. It provides users with detailed inspection reports on various parts of a vehicle, offering a comprehensive assessment of its overall condition. This web-based application aims to simplify the inspection process for users and administrators, generating in-depth documentation for every vehicle inspected.",
+    stack: [
+      "React",
+      "CSS",
+      "Bootstrap",
+      "RSuite",
+      "Vercel"
+    ],
+    features: [
+      "Detailed inspection reports for each vehicle part",
+      "Automated document generation for comprehensive inspections",
+      "User-friendly web-based platform for both customers and inspectors",
+      "Role-based access for inspectors and administrators",
+    ],
+    images: [green1, green2, green3, green4, green5, green6],
+    github_fe: "https://github.com/YourRepo/GreenLight_FE",
+    github_be: "https://github.com/YourRepo/GreenLight_BE",
+    demo: "https://greenlightinspection.vercel.app/"
   },
 ];
 
