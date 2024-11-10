@@ -45,7 +45,7 @@ function Projects() {
               <div className="projects-box-title">
                 <p>{project.title}</p>
                 <a
-                  href="https://github.com/BKPASQUAL/TPP_FE.git"
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="github-icon"
