@@ -1,11 +1,12 @@
 // src/components/Projects.js
+
 import React, { useEffect } from "react";
 import "../../assets/css/Projects.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import projectData from "../../assets/data/Projects";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation , Autoplay  } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
@@ -46,25 +47,25 @@ function Projects() {
               <div className="projects-box-left">
                 <div className="projects-box-left-img">
                   {/* Custom Navigation Buttons */}
-                  <span
+                  {/* <span
                     className="material-symbols-outlined arrow left"
                     id={`prev-${index}`}
                   >
                     keyboard_arrow_left
-                  </span>
+                  </span> */}
 
                   <Swiper
                     spaceBetween={30}
                     slidesPerView={1}
-                    modules={[Navigation, Autoplay]} // Add Autoplay module
+                    modules={[Navigation, Autoplay]}
                     navigation={{
                       prevEl: `#prev-${index}`,
                       nextEl: `#next-${index}`,
                     }}
-                    loop={true} // Enable looping
+                    loop={true}
                     autoplay={{
-                      delay: 2000, // Set delay to 2 seconds
-                      disableOnInteraction: false, // Keep autoplay after manual swipe
+                      delay: 2000,
+                      disableOnInteraction: false,
                     }}
                   >
                     {project.images.map((image, imgIndex) => (
@@ -77,12 +78,12 @@ function Projects() {
                     ))}
                   </Swiper>
 
-                  <span
+                  {/* <span
                     className="material-symbols-outlined arrow right"
                     id={`next-${index}`}
                   >
                     keyboard_arrow_right
-                  </span>
+                  </span> */}
                 </div>
               </div>
               <div className="projects-box-right">
@@ -105,7 +106,7 @@ function Projects() {
                   <div className="project-section-content">
                     <ul>
                       {project.features.map((feature, featureIndex) => (
-                        <div key={featureIndex}>{feature}</div>
+                        <li key={featureIndex}>{feature}</li>
                       ))}
                     </ul>
                   </div>
