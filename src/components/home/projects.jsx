@@ -8,7 +8,12 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import { FaCode, FaDatabase, FaProjectDiagram } from "react-icons/fa"; // Import distinct icons for each category
+import {
+  FaCode,
+  FaDatabase,
+  FaPlayCircle,
+  FaProjectDiagram,
+} from "react-icons/fa"; 
 
 function Projects() {
   const controls = useAnimation();
@@ -79,6 +84,18 @@ function Projects() {
                       title="Management Repository"
                     >
                       <FaProjectDiagram size={30} /> {/* Management icon */}
+                    </a>
+                  )}
+
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-icon"
+                      title="Demo"
+                    >
+                      <FaPlayCircle size={30} /> {/* Demo icon */}
                     </a>
                   )}
                 </div>

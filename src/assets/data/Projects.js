@@ -1,5 +1,3 @@
-// src/components/Projects.js
-
 import tpp1 from "../images/TPP/tpp1.png";
 import tpp2 from "../images/TPP/tpp2.png";
 import tpp3 from "../images/TPP/tpp3.png";
@@ -8,6 +6,15 @@ import tpp5 from "../images/TPP/tpp5.png";
 
 import medi1 from "../images/Medicenece/medi1.png";
 import medi2 from "../images/Medicenece/medi2.png";
+
+import car1 from "../images/CarStore/car1.png"
+import car2 from "../images/CarStore/car2.png"
+import car3 from "../images/CarStore/car3.png"
+import car4 from "../images/CarStore/car4.png"
+import car5 from "../images/CarStore/car5.png"
+import car6 from "../images/CarStore/car6.png"
+import car7 from "../images/CarStore/car7.png"
+import car8 from "../images/CarStore/car8.png"
 
 const Projects = [
   {
@@ -41,9 +48,30 @@ const Projects = [
     github_fe: "https://github.com/YourRepo/MedicalLabManagementSystem_FE",
     github_be: "https://github.com/YourRepo/MedicalLabManagementSystem_BE",
     github_management: "https://github.com/YourRepo/MedicalLabManagementSystem_Management",
-  }
+  },
+    
+      {
+        title: "Luxury Ride - Premium Car Store",
+        description: "Luxury Ride is a sophisticated car dealership platform where users can explore and obtain details about luxury cars. This web application includes both a user-facing site and a management dashboard. Users can view car listings, request more details via an email-based inquiry system, and get real-time updates. The management dashboard allows administrators to manage car listings, inquiries, and site updates effectively, providing a seamless admin experience.",
+        stack: [
+          "React", "RTK Query", "ApexCharts", "MUI", "Bootstrap",
+          "Google Icons", "Node.js", "Sequelize", "Express", "MySQL",
+          "AWS EC2", "Vercel", "GitHub"
+        ],
+        features: [
+          "Email-based inquiry system",
+          "Detailed car information and specifications",
+          "Real-time updates and site management",
+          "Role-based access for user and admin functionality",
+          "Admin dashboard for managing car listings and site data"
+        ],
+        images: [car1, car2, car3, car4, car5, car6, car7, car8],
+        github_fe: "https://github.com/YourRepo/LuxuryRide_FE",
+        github_be: "https://github.com/YourRepo/LuxuryRide_BE",
+        github_management: "https://github.com/YourRepo/LuxuryRide_Management",
+        demo: "https://luxuryrides.vercel.app/",
+      },
   
-  // Add other projects as needed...
 ];
 
 export default Projects;
