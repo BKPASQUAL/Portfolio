@@ -33,6 +33,11 @@ import green4 from "../images/Green/green4.png"
 import green5 from "../images/Green/green5.png"
 import green6 from "../images/Green/green6.png"
 
+import ch1 from "../images/CH/ch1.png"
+import ch2 from "../images/CH/ch2.png"
+import ch3 from "../images/CH/ch3.png"
+import ch4 from "../images/CH/ch4.png"
+
 const Projects = [
   {
     title: "AI-Based Customized Travel Planning Platform For Galle",
@@ -187,6 +192,32 @@ const Projects = [
     github_fe: "https://github.com/YourRepo/GreenLight_FE",
     github_be: "https://github.com/YourRepo/GreenLight_BE",
     demo: "https://greenlightinspection.vercel.app/"
+  },
+  {
+    title: "Champika Hardware - Retail & Inventory Management System",
+    description:
+      "Champika Hardware is an ongoing project designed for managing hardware distribution and retail operations. It includes a comprehensive inventory system to handle stock management, customer records, supplier relationships, and billing processes. With a centralized database, the platform helps streamline inventory, billing, and data maintenance, enhancing efficiency for both wholesale and retail activities.",
+    stack: [
+      "React",
+      "RTK Query",
+      "Node.js",
+      "Sequelize",
+      "Express",
+      "Tailwind CSS",
+      "Figma",
+      "MUI",
+      "RSuite"
+    ],
+    features: [
+      "Inventory management for hardware items",
+      "Billing and receipt generation",
+      "Customer and supplier management",
+      "Database maintenance for customer and supplier records",
+      "Centralized system for efficient retail and distribution operations"
+    ],
+    images: [ch1, ch2, ch3, ch4], // Replace with actual images of the project
+    github_fe: "https://github.com/YourRepo/ChampikaHardware_FE",
+    github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
   },
 ];
 
