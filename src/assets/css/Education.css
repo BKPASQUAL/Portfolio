@@ -1,0 +1,61 @@
+.Education-main {
+    padding: 20px;
+}
+
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+    color: #ffffff; /* White text for titles and subtitles */
+    text-align: left;
+}
+
+.vertical-timeline-element-content {
+    color: #ffffff;
+    background-color: #000000; /* Dark background for content box */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;}
+
+.education-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    text-align: left; /* Ensures text is also left-aligned */
+}
+
+.vertical-timeline-element-date {
+    color: #bbbbbb; /* Light grey for dates */
+    background: transparent;
+}
+
+.vertical-timeline::before {
+    z-index: 1;
+    background-color: #000000; /* Darker line color */
+}
+
+.vertical-timeline-element-icon {
+    z-index: 2; /* Ensures the icon is above the line */
+}
+
+.education-details h2 {
+    color: white !important;
+    text-align: left !important;
+}
+
+.Education-main-title {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 40px;
+
+}
