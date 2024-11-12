@@ -1,75 +1,86 @@
 /* Main container styling */
 .experience-main {
-    padding: 40px;
-    padding-left: 6.3%;
-    padding-right: 6.3%;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 4%;
+  padding: 40px;
+  padding-left: 6.3%;
+  padding-right: 6.3%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4%;
 }
 
 /* Title styling */
 .experience-title {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-bottom: 4%;
-
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-bottom: 4%;
 }
 
 /* Experience container */
 .experience-con {
-    display: flex;
-    justify-content: space-between;
-    gap: 2%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
 }
 
 /* Experience card styling */
 .experience-main-one,
 .experience-main-two {
-    flex: 1;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    border: 1px solid white;
-
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid white;
 }
 
 /* Experience card hover effect */
 .experience-main-one:hover,
 .experience-main-two:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Role and company text styling */
 .experience-main-one h2,
 .experience-main-two h2 {
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .experience-main-one h3,
 .experience-main-two h3 {
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 /* Point list styling */
 .experience-details {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 1.6;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 .experience-details li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .experience-con {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .experience-main-one {
+    margin-bottom: 20px;
+
+  }
 }
