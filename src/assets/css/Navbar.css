@@ -19,82 +19,102 @@
 .navbar-main.show {
   transform: translateY(0); /* Shows the navbar when scrolling up */
 }
-  .navbar-left {
-    width: 33%;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-
-  }
+.navbar-left {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
 .navbar-title {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-  .navbar-left img {
-    width: 60px; /* Set width and height to match text */
-    height: 60px;
-    margin-right: 10px; /* Space between logo and text */
-    border-radius: 50%; /* Optional: make it circular */
-    object-fit: cover;
-    background-color: transparent;
-
+.navbar-left img {
+  width: 60px; /* Set width and height to match text */
+  height: 60px;
+  margin-right: 10px; /* Space between logo and text */
+  border-radius: 50%; /* Optional: make it circular */
+  object-fit: cover;
+  background-color: transparent;
 }
-  .navbar-left h1 {
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-    background-color: transparent;
+.navbar-left h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+}
 
+.navbar-left p {
+  color: white;
+  background-color: transparent;
+}
+
+.navbar-mid {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.navbar-mid p {
+  margin-left: 2%;
+  margin-right: 2%;
+  color: rgb(224, 225, 226);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.navbar-mid p:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transform: scale(1.05);
+  background-color: transparent;
+}
+
+.navbar-right {
+  width: 32%;
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+}
+
+.navbar-right p {
+  margin-left: 2%;
+  margin-right: 2%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+@media (max-width: 760px) {
+  .navbar-right p {
+    display: none; /* Hide LinkedIn, Resume, and GitHub in mobile view */
   }
-
-  .navbar-left p {
-    color: white;
+  .navbar-right .icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
     background-color: transparent;
-
+    margin-right: 14px;
   }
 
   .navbar-mid {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-
-
+    display: none;
   }
 
-  .navbar-mid p {
-    margin-left: 2%;
-    margin-right: 2%;
-    color: rgb(224, 225, 226);
-    cursor: pointer;
-    background-color: transparent;
+  /* .navbar-left {
+    margin-top: 90px;
+  } */
 
+  .navbar-left p {
+    display: none;
   }
 
-  .navbar-mid p:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    transform: scale(1.05);
-    background-color: transparent;
-
-
+  .navbar-left h1 {
+    font-size: 12px;
+    width: 1000px;
+    margin-top: 20px;
   }
 
-  .navbar-right {
-    width: 32%;
-    display: flex;
-    justify-content: end;
-    background-color: transparent;
-
-    
-  }
-
-  .navbar-right p {
-    margin-left: 2%;
-    margin-right: 2%;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-weight: 600;
-    background-color: transparent;
-
-  }
+}

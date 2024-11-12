@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/Navbar.css";
 import bk from "../../assets/images/bk.jpg";
 import { useNavigate } from "react-router-dom";
+import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+
 
 function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -44,7 +46,7 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
         </div>
       </div>
       <div className="navbar-mid">
-        <p onClick={onClick}>About</p>
+        <p onClick={onClick} >About</p>
         <p onClick={onSkillsClick}>Skills</p>
         <p onClick={onProjectsClick}>Projects</p>
         <p onClick={onExperienceClick}>Experience</p>
@@ -53,6 +55,8 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
         <p>LinkedIn</p>
         <p>Resume</p>
         <p>GitHub</p>
+        <FaGithub className="icon" /> {/* GitHub icon for mobile */}
+
       </div>
     </div>
   );
