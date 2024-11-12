@@ -32,7 +32,7 @@ function Education() {
 
   return (
     <div className="Education-main">
-        <div className="Education-main-title">Edication</div>
+        <div className="Education-main-title">Education</div>
       <VerticalTimeline>
         {education.map((edu, index) => (
         <VerticalTimelineElement

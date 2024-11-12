@@ -1,34 +1,29 @@
 .HeaderSection-main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100vh;
   padding: 0 6%;
   color: #fff;
-  z-index: -10 ;
+  z-index: -10;
 }
-
-
 
 .HeaderSection-left {
   width: 40%;
   height: 100%;
   background-image: url(../images/without_background.png);
-  background-size: contain; /* Ensures the image scales without cropping */
-  background-position:left; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
   border-radius: 15px;
   margin-right: 2%;
   background-attachment: fixed;
 }
 
-
 .HeaderSection-right {
   width: 45%;
   padding-left: 5%;
 }
-
-
 
 .HeaderSection-right h1 {
   font-size: 3em;
@@ -64,4 +59,39 @@
 .HeaderSection-right button:hover {
   background-color: #e09e2e;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .HeaderSection-main {
+    flex-direction: column;
+    padding: 0 3%;
+  }
+
+  .HeaderSection-left {
+    width: 80%;           /* Make the image section narrower */
+    height: 50vh;         /* Adjust the height to make it smaller on mobile */
+    background-size:80%; /* Keep the image contained within the smaller space */
+    background-position: top;
+    border-radius: 10px;
+    background-position: center 20%; 
+  }
+
+  .HeaderSection-right {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .HeaderSection-right h1 {
+    font-size: 2em;
+  }
+
+  .HeaderSection-right p {
+    font-size: 1em;
+  }
+
+  .HeaderSection-right button {
+    padding: 0.7em 1.2em;
+    font-size: 0.9em;
+  }
 }
