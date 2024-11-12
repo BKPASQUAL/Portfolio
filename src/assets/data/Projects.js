@@ -38,6 +38,13 @@ import ch2 from "../images/Hardware/ch2.png"
 import ch3 from "../images/Hardware/ch3.png"
 import ch4 from "../images/Hardware/ch4.png"
 
+import vital1 from "../images/vitalWatch/vital1.png"
+import vital2 from "../images/vitalWatch/vital2.png"
+import vital3 from "../images/vitalWatch/vital3.png"
+import vital4 from "../images/vitalWatch/vital4.png"
+import vital5 from "../images/vitalWatch/vital5.png"
+import vital6 from "../images/vitalWatch/vital6.png"
+
 const Projects = [
   {
     title: "AI-Based Customized Travel Planning Platform For Galle",
@@ -192,6 +199,32 @@ const Projects = [
     github_fe: "https://github.com/YourRepo/GreenLight_FE",
     github_be: "https://github.com/YourRepo/GreenLight_BE",
     demo: "https://greenlightinspection.vercel.app/"
+  },
+  {
+    title: "Vital Watch - Smart ICU Patient Monitoring System",
+    description:
+      "Vital Watch is a smart ICU patient monitoring system designed to replace traditional paper records with digital monitoring. This system enables real-time vital sign monitoring and simplifies patient data analysis, providing role-based access control for enhanced security and data management.",
+    stack: [
+      "React",
+      "RTK Query",
+      "ApexCharts",
+      "Bootstrap",
+      "Node.js",
+      "Sequelize",
+      "Express",
+      "MySQL",
+    ],
+    features: [
+      "Real-time vital sign monitoring",
+      "Replacement of old paper records with digital tracking",
+      "Patient data analysis and insights",
+      "Patient database maintenance",
+      "Role-based access control for secure data handling",
+    ],
+    images: [vital1, vital2, vital3, vital4, vital5, vital6],
+    github_fe: "https://github.com/YourRepo/VitalWatch_FE",
+    github_be: "https://github.com/YourRepo/VitalWatch_BE",
+    demo: "https://vitalwatchdemo.vercel.app/",
   },
   {
     title: "Champika Hardware - Retail & Inventory Management System",
