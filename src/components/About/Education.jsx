@@ -11,7 +11,7 @@ function Education() {
     {
       institution: "NSBM Green University Town",
       degree: "B.Sc. Engineering Honours in Computer Systems Engineering",
-      year: "2025",
+      year: "2024",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMusNEftMbTRViAvsf9E2hevtoFoTcYmxHA&s",
     },
     {

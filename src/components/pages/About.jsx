@@ -3,6 +3,7 @@ import HeaderSection from '../About/HeaderSection'
 import Navbar from '../common/Navbar'
 import Education from '../About/Education'
 import Footer from '../common/Footer'
+import Certificate from '../About/Certificate'
  
  function About() {
    return (
@@ -10,6 +11,7 @@ import Footer from '../common/Footer'
       <Navbar/>
        <HeaderSection/>
        <Education/>
+       <Certificate/>
        <Footer/>
      </div>
    )
