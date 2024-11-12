@@ -63,7 +63,7 @@
 }
 
 /* Mobile Styles */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .landingPage-main {
     flex-direction: column-reverse;
     align-items: center;
@@ -104,4 +104,4 @@
     z-index: 4;
   }
 }
- */
+
