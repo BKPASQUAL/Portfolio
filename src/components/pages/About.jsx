@@ -2,6 +2,7 @@
 import HeaderSection from '../About/HeaderSection'
 import Navbar from '../common/Navbar'
 import Education from '../About/Education'
+import Footer from '../common/Footer'
  
  function About() {
    return (
@@ -9,6 +10,7 @@ import Education from '../About/Education'
       <Navbar/>
        <HeaderSection/>
        <Education/>
+       <Footer/>
      </div>
    )
  }
