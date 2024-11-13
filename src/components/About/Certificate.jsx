@@ -2,6 +2,8 @@ import React from "react";
 import "../../assets/css/Certificate.css";
 import aws from "../../assets/images/certifacates/aws.png"
 import udemy from "../../assets/images/certifacates/udemy.png"
+import java from "../../assets/images/certifacates/java.png"
+import deepLearning from "../../assets/images/certifacates/deepLearning.png"
 
 function Certificate() {
   const certificates = [
@@ -9,7 +11,7 @@ function Certificate() {
       id: 1,
       title: "React Developer",
       description:
-        "Completed a comprehensive course on React fundamentals and advanced concepts.",
+        "Completed a comprehd",
       image: aws,
     },
     {
@@ -22,13 +24,13 @@ function Certificate() {
       id: 3,
       title: "Web Design Fundamentals",
       description: "Learned HTML, CSS, and responsive design principles.",
-      image: "https://via.placeholder.com/150",
+      image: java,
     },
     {
       id: 4,
       title: "JavaScript Expert",
       description: "Advanced understanding of JavaScript and ES6+ features.",
-      image: "https://via.placeholder.com/150",
+      image: deepLearning,
     },
   ];
 
