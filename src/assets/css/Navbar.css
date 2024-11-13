@@ -8,13 +8,13 @@
   z-index: 10;
   align-items: center;
   padding: 1%;
-  background-color: transparent;
+  background-color: black;
   transition: transform 0.3s ease-in-out;
 }
 
-.navbar-main.hide {
-  transform: translateY(-100%); /* Hides the navbar when scrolling down */
-}
+/* .navbar-main.hide {
+  transform: translateY(-100%); 
+} */
 
 .navbar-main.show {
   transform: translateY(0); /* Shows the navbar when scrolling up */
