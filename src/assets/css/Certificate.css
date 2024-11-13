@@ -51,10 +51,11 @@
 }
 
 .flip-card-front {
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .Certificate-image {
@@ -64,7 +65,7 @@
 }
 
 .flip-card-back {
-    background-color: #333;
+    background-color: transparent;
     color: white;
     transform: rotateX(180deg); /* Back face is initially rotated 180deg on X-axis */
     display: flex;
@@ -72,6 +73,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    border: 1px solid white;
 }
 
 .flip-card-back h3 {
