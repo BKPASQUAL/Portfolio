@@ -16,9 +16,9 @@
   transform: translateY(-100%); 
 } */
 
-.navbar-main.show {
-  transform: translateY(0); /* Shows the navbar when scrolling up */
-}
+/* .navbar-main.show {
+  transform: translateY(0); 
+} */
 .navbar-left {
   width: 33%;
   display: flex;
@@ -30,10 +30,10 @@
 }
 
 .navbar-left img {
-  width: 60px; /* Set width and height to match text */
+  width: 60px; 
   height: 60px;
-  margin-right: 10px; /* Space between logo and text */
-  border-radius: 50%; /* Optional: make it circular */
+  margin-right: 10px;
+  border-radius: 50%; 
   object-fit: cover;
   background-color: transparent;
 }
@@ -89,7 +89,7 @@
 
 @media (max-width: 768px) {
   .navbar-right p {
-    display: none; /* Hide LinkedIn, Resume, and GitHub in mobile view */
+    display: none; 
   }
   .navbar-right .icon {
     color: rgb(255, 255, 255);
