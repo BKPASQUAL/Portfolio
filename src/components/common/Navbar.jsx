@@ -30,6 +30,7 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
     navigate("./about");
   };
 
+  // Function to scroll to the top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -50,13 +51,14 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
         <p onClick={onExperienceClick}>Experience</p>
       </div>
       <div className="navbar-right">
-        <a href="https://www.linkedin.com/in/bawanthapasqual/" className="icon-link">
-          <FaLinkedin className="icon" />
+        <a href="https://www.linkedin.com/in/bawanthapasqual/">LinkedIn</a>
+        <FaLinkedin className="icon" />
+
+        <a href="/BawanthaPasqualCVResume.pdf" >
+          Resume
         </a>
-        <a href="https://github.com/BKPASQUAL" className="icon-link">
-          <FaGithub className="icon" />
-        </a>
-        <a href="/BawanthaPasqualCVResume.pdf" className="resume-link">Resume</a>
+        <a href="https://github.com/BKPASQUAL">GitHub</a>
+        <FaGithub className="icon" /> 
       </div>
     </div>
   );

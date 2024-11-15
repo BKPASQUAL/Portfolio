@@ -98,16 +98,15 @@
 
 }
 @media (max-width: 768px) {
-
+  .navbar-right a {
+    display: none;
+  }
   .navbar-right .icon {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
     margin-right: 14px;
-  }
-  .resume-link {
-    display: none;
   }
 
   .navbar-mid {
