@@ -24,7 +24,7 @@
 
 .flip-card {
     width: 20%;
-    perspective: 1000px; /* Provides a 3D effect for the flip */
+    perspective: 1000px; 
 }
 
 .flip-card-inner {
@@ -37,14 +37,14 @@
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateX(180deg); /* Flips the card on the X-axis on hover */
+    transform: rotateX(180deg); 
 }
 
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Hides back side while not flipped */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -67,7 +67,7 @@
 .flip-card-back {
     background-color: transparent;
     color: white;
-    transform: rotateX(180deg); /* Back face is initially rotated 180deg on X-axis */
+    transform: rotateX(180deg); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@
 }
 
 .certificate-link {
-    color: white; /* Customize as needed */
+    color: white; 
     text-decoration: none;
     font-size: 24px;
     margin-top: 10px;
@@ -96,8 +96,8 @@
   }
   
   .certificate-link .material-symbols-outlined {
-    font-size: 24px; /* Adjust icon size */
-    color: #ffffff; /* Customize icon color */
+    font-size: 24px; 
+    color: #ffffff; 
   }
   
 
@@ -121,14 +121,14 @@
 
     .flip-card-front,
     .flip-card-back {
-        height: 100%; /* Makes both sides equal in height */
+        height: 100%; 
         border-radius: 8px;
         padding: 0px;
     }
 
     .Certificate-image {
         width: 100%;
-        height: 100%; /* Ensures image fills the front side */
+        height: 100%; 
         object-fit: cover;
         border-radius: 8px;
     }
