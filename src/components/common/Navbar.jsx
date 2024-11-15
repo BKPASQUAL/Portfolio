@@ -12,9 +12,9 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // Hide navbar when scrolling down
+        setShowNavbar(false); 
       } else {
-        setShowNavbar(true);  // Show navbar when scrolling up
+        setShowNavbar(true);  
       }
       setLastScrollY(window.scrollY);
     };
@@ -30,7 +30,6 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
     navigate("./about");
   };
 
-  // Function to scroll to the top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

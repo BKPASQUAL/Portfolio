@@ -57,7 +57,6 @@ const Projects = [
       "RTK Query",
       "Node.js",
       "Python (Machine Learning)",
-      "MongoDB",
       "AWS",
       "Vercel",
       "Dialogflow",
@@ -71,7 +70,7 @@ const Projects = [
     ],
     images: [tpp1, tpp2, tpp3, tpp4, tpp5],
     github_fe: "https://github.com/BKPASQUAL/TPP_FE.git",
-    github_be: "https://github.com/BKPASQUAL/TPP_BE.git",
+    github_be: "https://github.com/BKPASQUAL/DialogFlow_BE.git",
   },
 
   {
@@ -101,8 +100,8 @@ const Projects = [
       "Receipts and billing management",
     ],
     images: [medi1, medi2],
-    github_fe: "https://github.com/YourRepo/MedicalLabManagementSystem_FE",
-    github_be: "https://github.com/YourRepo/MedicalLabManagementSystem_BE",
+    github_fe: "https://github.com/BKPASQUAL/Medisense_FE.git",
+    github_be: "https://github.com/BKPASQUAL/medisense_be.git",
 
   },
 
@@ -133,9 +132,9 @@ const Projects = [
       "Admin dashboard for managing car listings and site data",
     ],
     images: [car1, car2, car3, car4, car5, car6, car7, car8],
-    github_fe: "https://github.com/YourRepo/LuxuryRide_FE",
-    github_be: "https://github.com/YourRepo/LuxuryRide_BE",
-    github_management: "https://github.com/YourRepo/LuxuryRide_Management",
+    github_fe: "https://github.com/BKPASQUAL/Car-Store-FE.git",
+    github_be: "https://github.com/BKPASQUAL/Car-Store-BE.git",
+    github_management: "https://github.com/BKPASQUAL/Car-Store-Management.git",
     demo: "https://luxuryrides.vercel.app/",
   },
 
@@ -174,8 +173,8 @@ const Projects = [
       event8,
       event9,
     ],
-    github_fe: "https://github.com/YourRepo/WeddingsBySonali_FE",
-    github_be: "https://github.com/YourRepo/WeddingsBySonali_BE",
+    github_fe: "https://github.com/BKPASQUAL/Weddings_By_Sonali_FE.git",
+    github_be: "https://github.com/BKPASQUAL/Weddings_By_Sonali_BE.git",
   },
 
   {
@@ -196,9 +195,8 @@ const Projects = [
       "Role-based access for inspectors and administrators",
     ],
     images: [green1, green2, green3, green4, green5, green6],
-    github_fe: "https://github.com/YourRepo/GreenLight_FE",
-    github_be: "https://github.com/YourRepo/GreenLight_BE",
-    demo: "https://greenlightinspection.vercel.app/"
+    github_fe: "https://github.com/BKPASQUAL/GreenLight.git",
+    demo: "https://green-light-neon.vercel.app/home"
   },
   {
     title: "Vital Watch - Smart ICU Patient Monitoring System",
@@ -222,9 +220,8 @@ const Projects = [
       "Role-based access control for secure data handling",
     ],
     images: [vital1, vital2, vital3, vital4, vital5, vital6],
-    github_fe: "https://github.com/YourRepo/VitalWatch_FE",
-    github_be: "https://github.com/YourRepo/VitalWatch_BE",
-    demo: "https://vitalwatchdemo.vercel.app/",
+    github_fe: "https://github.com/BKPASQUAL/vitalwatchFE.git",
+    github_be: "https://github.com/AnukaFonseka/vital_watch_be.git",
   },
   {
     title: "Champika Hardware - Retail & Inventory Management System",
@@ -249,8 +246,8 @@ const Projects = [
       "Centralized system for efficient retail and distribution operations"
     ],
     images: [ch1, ch2, ch3, ch4],
-    github_fe: "https://github.com/YourRepo/ChampikaHardware_FE",
-    github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
+    github_fe: "https://github.com/BKPASQUAL/Champika-Hardware-FE.git",
+    // github_be: "https://github.com/YourRepo/ChampikaHardware_BE",
   },
 ];
 
