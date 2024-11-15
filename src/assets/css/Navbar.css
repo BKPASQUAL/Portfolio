@@ -30,10 +30,10 @@
 }
 
 .navbar-left img {
-  width: 60px; 
+  width: 60px;
   height: 60px;
   margin-right: 10px;
-  border-radius: 50%; 
+  border-radius: 50%;
   object-fit: cover;
   background-color: transparent;
 }
@@ -87,16 +87,27 @@
   background-color: transparent;
 }
 
+.navbar-right a {
+  margin-left: 2%;
+  margin-right: 2%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+  text-decoration: none;
+
+}
 @media (max-width: 768px) {
-  .navbar-right p {
-    display: none; 
-  }
+
   .navbar-right .icon {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
     margin-right: 14px;
+  }
+  .resume-link {
+    display: none;
   }
 
   .navbar-mid {
@@ -116,5 +127,4 @@
     width: 1000px;
     margin-top: 20px;
   }
-
 }

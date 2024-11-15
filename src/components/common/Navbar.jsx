@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/Navbar.css";
 import bk from "../../assets/images/bk.jpg";
 import { useNavigate } from "react-router-dom";
-import { FaGithub } from "react-icons/fa"; // Import GitHub icon
-
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
 
 function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -28,10 +27,9 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
   }, [lastScrollY]);
 
   const onClick = () => {
-    navigate("./about")
-  }
+    navigate("./about");
+  };
 
-  // Function to scroll to the top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -46,17 +44,19 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
         </div>
       </div>
       <div className="navbar-mid">
-        <p onClick={onClick} >About</p>
+        <p onClick={onClick}>About</p>
         <p onClick={onSkillsClick}>Skills</p>
         <p onClick={onProjectsClick}>Projects</p>
         <p onClick={onExperienceClick}>Experience</p>
       </div>
       <div className="navbar-right">
-        <p>LinkedIn</p>
-        <p>Resume</p>
-        <p>GitHub</p>
-        <FaGithub className="icon" /> {/* GitHub icon for mobile */}
-
+        <a href="https://www.linkedin.com/in/bawanthapasqual/" className="icon-link">
+          <FaLinkedin className="icon" />
+        </a>
+        <a href="https://github.com/BKPASQUAL" className="icon-link">
+          <FaGithub className="icon" />
+        </a>
+        <a href="/BawanthaPasqualCVResume.pdf" className="resume-link">Resume</a>
       </div>
     </div>
   );
