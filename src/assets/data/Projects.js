@@ -3,6 +3,9 @@ import tpp2 from "../images/TPP/tpp2.png";
 import tpp3 from "../images/TPP/tpp3.png";
 import tpp4 from "../images/TPP/tpp4.png";
 import tpp5 from "../images/TPP/tpp5.png";
+import tpp6 from "../images/TPP/tpp6.png";
+import tpp7 from "../images/TPP/tpp7.png";
+import tpp8 from "../images/TPP/tpp8.png";
 
 import medi1 from "../images/Medicenece/medi1.png";
 import medi2 from "../images/Medicenece/medi2.png";
@@ -68,7 +71,7 @@ const Projects = [
       "Hotel, restaurant, and famous site discovery",
       "Galle area-specific recommendations",
     ],
-    images: [tpp1, tpp2, tpp3, tpp4, tpp5],
+    images: [tpp1, tpp2, tpp3, tpp4, tpp5,tpp6,tpp7,tpp8],
     github_fe: "https://github.com/BKPASQUAL/TPP_FE.git",
     github_be: "https://github.com/BKPASQUAL/DialogFlow_BE.git",
   },
