@@ -6,7 +6,7 @@ import "../../assets/css/Experience.css";
 function Experience() {
   const { ref, inView } = useInView({
     triggerOnce: true, // Animates only the first time it comes into view
-    threshold: 0.1,    // Adjusts when the animation triggers (10% visibility)
+    threshold: 0.1, // Adjusts when the animation triggers (10% visibility)
   });
 
   return (
@@ -36,10 +36,35 @@ function Experience() {
           <h2>Software Engineer, Intern</h2>
           <h3>Amerck Inc., StratfordAve, Colombo</h3>
           <ul className="experience-details">
-            <li>Developed user interfaces using React, Redux, RTK Query, and Tailwind CSS</li>
-            <li>Collaborated on UI/UX design and prototyping using Figma and Miro</li>
-            <li>Engaged in agile development processes (Jira and Confluence)</li>
-            <li>Managed version control and CI/CD workflows via GitLab</li>
+            <li>
+              Developed user interfaces using React, Redux, RTK Query, and
+              Tailwind CSS for real-time ICU patient monitoring
+            </li>
+            <li>
+              Created an intuitive and responsive front-end design for
+              continuous patient assessment
+            </li>
+            <li>
+              Collaborated with the team on UI/UX design and prototyping using
+              Figma and Miro
+            </li>
+            <li>
+              Contributed to back-end development for efficient data management
+              and system reliability
+            </li>
+            <li>
+              Implemented real-time patient vitals tracking, digital
+              record-keeping, and role-based access control for secure,
+              compliant data handling
+            </li>
+            <li>
+              Followed Agile methodology using Jira for task tracking, GitLab
+              for version control, and Confluence for team documentation
+            </li>
+            <li>
+              Engaged in CI/CD workflows to ensure efficient development and
+              deployment
+            </li>
           </ul>
         </motion.div>
 
@@ -53,12 +78,29 @@ function Experience() {
           <h2>Training Network Engineer</h2>
           <h3>Fairfast Insurance (Pvt) Ltd, Colombo</h3>
           <ul className="experience-details">
-            <li>Contributed to network operations and infrastructure support</li>
+            <li>
+              Contributed to network operations and infrastructure support
+            </li>
             <li>Assisted in maintenance and optimization of network systems</li>
-            <li>Worked with Azure cloud for enhanced system management</li>
-            <li>Developed full-stack applications using React, Node.js, RTK Query, Sequelize, and Express</li>
-            <li>Designed and built user interfaces with React and managed API interactions</li>
-            <li>Contributed to UI/UX design using Figma</li>
+            <li>
+              Worked with <strong>Microsoft Azure</strong> and{" "}
+              <strong>AWS</strong> for enhanced system management
+            </li>
+            <li>
+              Configured and managed <strong>Linux</strong> and{" "}
+              <strong>Windows</strong> servers
+            </li>
+            <li>
+              Oversaw firewall replacements to improve data center security
+            </li>
+            <li>
+              Gained experience in cloud-based infrastructure solutions and
+              network architecture
+            </li>
+            <li>
+              Developed knowledge of <strong>network security protocols</strong>{" "}
+              and system optimization practices within a corporate setting
+            </li>
           </ul>
         </motion.div>
       </div>
