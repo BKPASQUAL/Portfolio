@@ -19,11 +19,11 @@ function Footer() {
         
         <ul className="social-links">
           <li><a href="https://www.linkedin.com/in/bawanthapasqual" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
-          <li><a href="https://github.com/yourgithubusername" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+          <li><a href="https://github.com/BKPASQUAL" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
           <li><a href="mailto:bawanthapasqual@gmail.com"><FaEnvelope /></a></li>
-          <li><a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
-          <li><a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
-          <li><a href="https://wa.me/+94773909791" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
+          <li><a href="https://www.instagram.com/_.bk_14._" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+          <li><a href="https://web.facebook.com/bk.pasqual" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
+          <li><a href="https://wa.me/+94770370370" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
         </ul>
       </div>
       
