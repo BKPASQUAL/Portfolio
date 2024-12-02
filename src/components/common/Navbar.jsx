@@ -39,7 +39,7 @@ function Navbar({ onSkillsClick, onProjectsClick, onExperienceClick }) {
       <div className="navbar-left" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
         <img src={bk} alt="Logo" />
         <div className="navbar-title">
-          <h1>Bawantha Kalind Pasqual</h1>
+          <h1>Bawantha Kalindu Pasqual</h1>
           <p>Full-Stack Developer</p>
         </div>
       </div>
